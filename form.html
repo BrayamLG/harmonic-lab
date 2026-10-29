@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harmonic Lab | Perfil do DJ</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script/form.js" defer></script>
+</head>
+<body>
+
+    <header class="site-header">
+        <a class="logo" href="index.html">HARMONIC<span>LAB</span></a>
+
+        <nav class="main-nav">
+            <a href="index.html">Estúdio</a>
+            <a class="active" href="form.html">Perfil do DJ</a>
+            <a href="about.html">Sobre o projeto</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="page-heading">
+            <p class="eyebrow">CRIE SEU PERFIL</p>
+            <h1>Qual é a sua identidade sonora?</h1>
+            <p>Conte um pouco sobre você e sua identidade musical.</p>
+        </section>
+
+        <section class="panel">
+            <h2>Perfil do DJ</h2>
+            <p>Preencha os campos para registrar seu perfil musical.</p>
+
+            <form action="formAction.html" method="GET" id="dj-form">
+
+                <div class="form-group">
+                    <label for="nome">Nome artístico</label>
+                    <input
+                        type="text"
+                        id="nome"
+                        name="nome"
+                        placeholder="Ex.: Kosmun"
+                        minlength="2"
+                        maxlength="50"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="voce@email.com"
+                        maxlength="100"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="estilo">Estilo musical principal</label>
+                    <select id="estilo" name="estilo" required>
+                        <option value="">Selecione um estilo</option>
+                        <option value="Psytrance">Psytrance</option>
+                        <option value="Progressive House">Progressive House</option>
+                        <option value="Melodic House">Melodic House</option>
+                        <option value="Techno">Techno</option>
+                        <option value="Deep House">Deep House</option>
+                        <option value="Outro">Outro</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="experiencia">Tempo de experiência</label>
+                    <select id="experiencia" name="experiencia" required>
+                        <option value="">Selecione uma opção</option>
+                        <option value="Iniciante">Estou começando</option>
+                        <option value="1 a 3 anos">1 a 3 anos</option>
+                        <option value="4 a 6 anos">4 a 6 anos</option>
+                        <option value="Mais de 6 anos">Mais de 6 anos</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="camelot">Tonalidade Camelot favorita</label>
+                    <select id="camelot" name="camelot" required>
+                        <option value="">Selecione uma tonalidade</option>
+                        <option value="7A">7A</option>
+                        <option value="8A">8A</option>
+                        <option value="9A">9A</option>
+                        <option value="10A">10A</option>
+                        <option value="8B">8B</option>
+                        <option value="9B">9B</option>
+                        <option value="10B">10B</option>
+                        <option value="12A">12A</option>
+                        <option value="Ainda não sei">Ainda não sei</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="descricao">Sobre seu som</label>
+                    <textarea
+                        id="descricao"
+                        name="descricao"
+                        rows="4"
+                        minlength="10"
+                        maxlength="300"
+                        placeholder="Descreva sua identidade musical..."
+                        required
+                    ></textarea>
+                </div>
+
+                <button type="submit" class="primary-button">
+                    Criar perfil
+                </button>
+
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>Harmonic Lab — Projeto acadêmico de desenvolvimento web.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Harmonic Lab | Estúdio Musical</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script/script.js" defer></script>
+</head>
+
+<body>
+
+    <header class="site-header">
+        <a class="logo" href="index.html">
+            HARMONIC<span>LAB</span>
+        </a>
+
+        <nav class="main-nav">
+            <a class="active" href="index.html">Estúdio</a>
+            <a href="form.html">Perfil do DJ</a>
+            <a href="about.html">Sobre o projeto</a>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <section class="page-heading">
+            <p class="eyebrow">MÚSICA E TECNOLOGIA</p>
+
+            <h1>Encontre a harmonia entre suas faixas.</h1>
+
+            <p>
+                Explore tonalidades musicais, descubra combinações
+                compatíveis e planeje transições para seus sets.
+            </p>
+        </section>
+
+        <section class="panel match-panel">
+
+            <p class="eyebrow">COMPATIBILIDADE HARMÔNICA</p>
+
+            <h2>Qual é a tonalidade da sua próxima faixa?</h2>
+
+            <p>
+                Selecione uma tonalidade na roda Camelot para encontrar
+                faixas que podem combinar harmonicamente com ela.
+            </p>
+
+            <div class="form-group">
+                <label for="current-key">Tonalidade de referência</label>
+
+                <select id="current-key">
+                    <option value="8A">8A — Lá menor</option>
+                    <option value="9A">9A — Mi menor</option>
+                    <option value="7A">7A — Ré menor</option>
+                    <option value="10A">10A — Si menor</option>
+                    <option value="8B">8B — Dó maior</option>
+                    <option value="9B">9B — Sol maior</option>
+                    <option value="10B">10B — Ré maior</option>
+                    <option value="12A">12A — Dó sustenido menor</option>
+                </select>
+            </div>
+
+            <button
+                type="button"
+                id="match-button"
+                class="primary-button"
+            >
+                Encontrar faixas compatíveis
+            </button>
+
+            <div
+                id="match-results"
+                class="match-results"
+                aria-live="polite"
+            ></div>
+
+        </section>
+
+        <section class="panel">
+
+            <p class="eyebrow">BIBLIOTECA MUSICAL</p>
+
+            <h2>Explore as faixas</h2>
+
+            <p>
+                Conheça as características de cada faixa e descubra
+                como tonalidade, estilo e energia se relacionam.
+            </p>
+
+            <div id="track-list" class="track-grid"></div>
+
+        </section>
+
+        <section class="panel">
+
+            <p class="eyebrow">SUA IDENTIDADE MUSICAL</p>
+
+            <h2>Conte-nos sobre seu som</h2>
+
+            <p>
+                Crie seu perfil e compartilhe seu estilo musical,
+                sua experiência e sua tonalidade Camelot favorita.
+            </p>
+
+            <a class="primary-button" href="form.html">
+                Criar perfil do DJ
+            </a>
+
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>Harmonic Lab — Projeto acadêmico de desenvolvimento web.</p>
+    </footer>
+
+</body>
+</html>
